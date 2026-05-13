@@ -1,9 +1,10 @@
 {
   "name": "MMM-SystemMonitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A SystemMonitor plugin for MagicMirror².",
   "main": "MMM-SystemMonitor.js",
   "author": "Ben Konsemüller",
+	"forker": "modo",
   "license": "MIT",
   "repository": {
 		"type": "git",
