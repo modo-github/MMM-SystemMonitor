@@ -32,8 +32,6 @@ git clone https://github.com/modo-github/MMM-SystemMonitor
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
 ```js
-var config = {
-    modules: [
         {
             module: 'MMM-SystemMonitor',
             position: 'top_left',
@@ -42,9 +40,7 @@ var config = {
                 cpuThermalZone: 0,
                 units: config.units,
             }
-        }
-    ]
-}
+        },
 ```
 
 ## Supported hardware
