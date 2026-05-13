@@ -3,6 +3,7 @@
  *
  * By Ben Konsemüller
  * MIT Licensed.
+ * Forked by modo
  */
 
 const Log = require("logger");
@@ -46,7 +47,7 @@ module.exports = NodeHelper.create({
   },
 
   async getAvailableMemoryPercentage() {
-    return await this.exec("free | awk '/^Mem/ { print (($4+$7)/$2 * 100) }'");
+    return await this.exec("free | awk '/^Mem/ { print ($7/$2 * 100) }'");
   },
 
   async getUptimeSeconds() {
@@ -58,6 +59,7 @@ module.exports = NodeHelper.create({
 
     return result.split(" ")[0];
   },
+
 
   async getAvailableSpacePercentage() {
     return await this.exec("df | awk '$6 == \"/\" {print $5}'");
@@ -74,3 +76,4 @@ module.exports = NodeHelper.create({
     return stdout;
   }
 });
+
