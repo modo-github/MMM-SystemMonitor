@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
 		"type": "git",
-		"url": "git+https://github.com/btastic/MMM-SystemMonitor"
+		"url": "git+https://github.com/modo-github/MMM-SystemMonitor"
 	},
   "keywords": [
 		"magic mirror",
@@ -16,11 +16,11 @@
 		"SystemMonitor",
 		"module"
 	],
-	"contributors": "https://github.com/btastic/MMM-SystemMonitor/graphs/contributors",
+	"contributors": "https://github.com/modo-github/MMM-SystemMonitor/graphs/contributors",
   "bugs": {
-		"url": "https://github.com/btastic/MMM-SystemMonitor/issues"
+		"url": "https://github.com/modo-github/MMM-SystemMonitor/issues"
 	},
-	"homepage": "https://github.com/btastic/MMM-SystemMonitor#readme",
+	"homepage": "https://github.com/modo-github/MMM-SystemMonitor#readme",
   "devDependencies": {
     "grunt": "latest",
     "grunt-eslint": "latest",
