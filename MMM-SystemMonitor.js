@@ -5,6 +5,7 @@
  *
  * By Ben Konsemüller
  * MIT Licensed.
+ * forked by modo 
  */
 
 Module.register("MMM-SystemMonitor", {
@@ -72,8 +73,21 @@ Module.register("MMM-SystemMonitor", {
   },
 
   uptimeFormat(uptimeInSeconds) {
-    return moment.utc(1000 * uptimeInSeconds).format('HH[h] mm[m] ss[s]');
-  },
+    // 1. Ensure we have a number. 
+    // If getUptimeSeconds returns a string "2927104.98", parseFloat fixes it.
+    const totalSeconds = Math.floor(parseFloat(uptimeInSeconds));
+
+    if (isNaN(totalSeconds)) return "Unknown";
+
+    // 2. Calculate units manually
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    // 3. Return formatted string
+    return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+},
 
   convertTemperature(temperature) {
     switch(this.config.units) {
