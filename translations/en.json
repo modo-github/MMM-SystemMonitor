@@ -1,6 +1,6 @@
 {
-  "CPU TEMP": "CPU temperature",
-  "FREE MEMORY": "Free memory",
+  "CPU TEMP": "CPU Temp",
+  "FREE MEMORY": "Free RAM",
   "UPTIME": "Uptime",
-  "FREE DISK SPACE": "Free disk space"
+  "FREE DISK SPACE": "Free space"
 }
