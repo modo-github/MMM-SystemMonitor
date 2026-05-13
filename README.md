@@ -73,7 +73,3 @@ will output the current temperature. This is what this module will use to displa
 | `updateInterval`     | *Optional* <br>The time interval between UI updates.<br><br>**Type:** `int`(milliseconds)<br>**Default:** 60000 milliseconds (60 seconds)
 | `cpuThermalZone`      | *Optional* <br>Use the cpu thermal zone index. <br><br>**Type:** `int` <br>**Default:** 0
 | `units`  | *Optional* <br>Use either 'metric' or 'imperial' to display the temperature.<br><br>**Type:** `string (metric\|imperial)` <br>**Default:** Inherit from config.js
-
-## Available localizations
-- English (en)
-- German (de)
