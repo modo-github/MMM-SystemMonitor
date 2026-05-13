@@ -2,6 +2,13 @@
 
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/).
 
+Forked from [the original](https://github.com/btastic/MMM-SystemMonitor)
+
+## Changes 
+Free RAM is now avabile not double counting cache twice. 
+Uptime method improved 
+
+
 ![screenshot](.github/example.png)
 
 This module will display your current system stats.
@@ -17,7 +24,7 @@ cd ~/MagicMirror/modules
 Clone this repository:
 
 ```bash
-git clone https://github.com/btastic/MMM-SystemMonitor
+git clone https://github.com/modo-github/MMM-SystemMonitor
 ```
 
 ## Using the module
@@ -40,7 +47,7 @@ var config = {
 ```
 
 ## Supported hardware
-- Raspberry Pi 3 (tested)
+- Raspberry Pi cm5 (tested)
 - Probably works on other Raspberry Pi's
 
 ## CPU Thermal Zone
